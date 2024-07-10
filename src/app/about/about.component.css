@@ -1,0 +1,16 @@
+.aboutContainer {
+    margin: 16px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
+
+.aboutInfo {
+    width: 68%;
+    font-size:18px;
+    letter-spacing: 2px;
+    line-height: 28px;
+    text-indent: 20px;
+}
