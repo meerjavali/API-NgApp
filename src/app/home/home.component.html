@@ -1,0 +1,21 @@
+<div ngClass="productContainer">
+  <div *ngIf="!data">Loading...</div>
+
+  <div *ngIf="data">
+    <p>Check our products!</p>
+    <div ngClass="products">
+      <div *ngFor="let product of data; let i = index">
+        <!-- <p>{{i+1}}</p> -->
+        <div ngClass="product">
+          <img
+            src="{{ product.image }}"
+            alt="{{ product.title }}"
+            (click)="viewProduct(product)"
+          />
+          <p>{{ product.title.slice(0, 38) + "..." }}</p>
+          <p>{{ product.price | currency }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

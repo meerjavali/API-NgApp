@@ -1,0 +1,39 @@
+.rootContainer {
+  margin: 1rem;
+}
+.container {
+  margin: 0.6rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  color: orangered;
+  font-weight: bolder;
+  letter-spacing: 6px;
+}
+
+nav {
+  padding: none;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+li a {
+  text-decoration: none;
+  letter-spacing: 0.8px;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+
+.active {
+  color: orangered !important;
+  font-weight: bolder;
+  font-size: 20px;
+}

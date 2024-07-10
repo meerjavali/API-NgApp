@@ -1,0 +1,22 @@
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+
+.product {
+  width: 140px;
+  height: 180px;
+  border-radius: 10px;
+  padding: 5px;
+  /* border: 1px solid grey; */
+}
+
+img{
+    width:140px;
+    height: 120px;
+}

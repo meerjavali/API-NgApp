@@ -1,0 +1,18 @@
+<button type="button" (click)="handleBack()" ngClass="backBtn">Back </button>
+
+<div ngClass="viewProduct">
+  <img
+    src="{{ getProductInfo.image }}"
+    alt="{{ getProductInfo.title }}"
+    ngClass="productImg"
+  />
+  <h2 [ngStyle]="{ 'font-weight': 'bold', 'letter-spacing': '2px' }">
+    {{ getProductInfo.title | titlecase }}
+  </h2>
+  <p [ngStyle]="{ 'letter-spacing': '1px' }">
+    {{ getProductInfo.description }}
+  </p>
+  <p [ngStyle]="{ 'font-weight': 'bold', 'font-size': '28px' }">
+    {{ getProductInfo.price | currency }}
+  </p>
+</div>

@@ -1,0 +1,29 @@
+.viewProduct {
+  margin: 20px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.productImg {
+  width: 210px;
+  height: 180px;
+}
+.backBtn {
+  outline: none;
+  border: none;
+  background-color: orangered;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 10px;
+}
+.backBtn:hover {
+  cursor: pointer;
+  border: 1px solid orangered;
+  color: orangered;
+  background: white;
+}
