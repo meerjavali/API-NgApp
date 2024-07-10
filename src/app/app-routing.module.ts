@@ -4,13 +4,15 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { ViewProductComponent } from './view-product/view-product.component';
+import { PageNotComponent } from './page-not/page-not.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', component: HomeComponent }, //default route
   { path: 'about', component: AboutComponent },
   { path: 'login', component: LoginComponent },
   { path: 'product/:id', component: ViewProductComponent },
-  { path: '**', component: HomeComponent },
+  {path:'error', component: PageNotComponent},
+  { path: '**', redirectTo:'/error' }
 ];
 
 @NgModule({

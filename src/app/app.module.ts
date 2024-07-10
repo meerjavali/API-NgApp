@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { ViewProductComponent } from './view-product/view-product.component';
+import { PageNotComponent } from './page-not/page-not.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { ViewProductComponent } from './view-product/view-product.component';
     HomeComponent,
     AboutComponent,
     LoginComponent,
-    ViewProductComponent
+    ViewProductComponent,
+    PageNotComponent
   ],
   imports: [
     BrowserModule,
