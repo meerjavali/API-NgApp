@@ -15,14 +15,19 @@ export class ViewProductComponent implements OnInit {
   constructor(private activatedRoute: ActivatedRoute, private dataSer: DataService, private router: Router) {}
 
   ngOnInit(): void {
-    this.activatedRoute.params.subscribe((params) => {
-      console.log(params['id']);
-      const id = params['id'];
-      this.dataSer.getProductDetails(id).subscribe((response) => {
-        console.log(response, 'id');
-        this.getProductInfo = response;
-      });
-    });
+    // this.activatedRoute.params.subscribe((params) => {
+    //   console.log(params['id']);
+    //   const id = params['id'];
+    //   this.dataSer.getProductDetails(id).subscribe((response) => {
+    //     console.log(response, 'id');
+    //     this.getProductInfo = response;
+    //   });
+    // });
+
+    this.activatedRoute.data.subscribe(response=>{
+      console.log(response);
+      this.getProductInfo = response['information']
+    })
   }
 
   handleBack(): void {

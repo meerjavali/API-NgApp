@@ -22,6 +22,7 @@ export class HomeComponent implements OnInit {
 
   viewProduct(product: any) {
     //console.log(product);
-    this.router.navigate([`/product/${product.id}`])
+    this.router.navigate([`/product/${product.id}`]) 
+    //this.router.navigate(['/product/'+product.id]) 
   }
 }
